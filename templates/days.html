@@ -1,0 +1,23 @@
+{% extends 'master.html' %}
+{% block content %}
+<h1>Teh Movie</h1>
+
+<div id="app">
+  <p>[[ title ]]</p>
+  <ul>
+    <li v-for="day in {{ days }}">
+      <h4>Day [[ day ]]</h4>
+    </li>
+  </ul>  
+</div>
+
+<script>
+    new Vue({
+      delimiters: ['[[', ']]'],
+      el: '#app',
+      data: {
+        title: 'Welcome to my first app'
+      }
+    })
+  </script>
+{% endblock %}
