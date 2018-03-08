@@ -77,6 +77,10 @@ WSGI_APPLICATION = 'pytehmuvi.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'tehmovie',
+    },
+    'postgres': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'tehmovie',
         'USER': 'craftsmon',
