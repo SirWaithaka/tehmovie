@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from movie.views import index
+from movie.views import HomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index)
+    path('', HomeView.as_view())
 ]
