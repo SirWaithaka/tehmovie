@@ -1,0 +1,12 @@
+// const cluster = require('cluster')
+const http =  require('http')
+const app = require('../src/app')
+
+const port = process.env.PORT || 9090
+const server = http.createServer(app)
+
+server.listen(port, (err) => {
+
+  if (err) console.error('Something happened', err)
+  console.log(`Server running on: ${port}`)
+})
