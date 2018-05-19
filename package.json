@@ -1,28 +1,21 @@
 {
-  "name": "pytehmuvi",
+  "name": "tehmuvi",
   "version": "0.0.1",
-  "description": "Just for building static assets",
-  "main": "index.js",
+  "description": "Scrap and display movies from tehmovies site",
+  "main": "bin/www",
   "scripts": {
     "start": "webpack --config webpack.config.js"
   },
-  "keywords": [
-    "vue",
-    "vue-resource",
-    "gulp"
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "git@github.com:craftsmon/pytehmovie.git"
   },
   "author": "Craftsman babou",
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-cli": "^2.0.1",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.10",
-    "webpack-dev-server": "^3.1.0",
-    "webpack-merge": "^4.1.2"
-  }
+  "dependencies": {
+    "express": "^4.16.3",
+    "kue": "^0.11.6"
+  },
+  "devDependencies": {}
 }
